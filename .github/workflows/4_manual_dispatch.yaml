@@ -1,0 +1,17 @@
+name: "Workflow Dispatch"
+on:
+  workflow_dispatch:
+
+jobs:
+  test-job:
+    runs-on: ubuntu-latest
+    name: Variables Test Job
+    steps:
+      - name: Echo Everything !
+        run: |
+          echo "GITHUB_SHA=$GITHUB_SHA"
+          echo "GITHUB_BASE_REF=$GITHUB_BASE_REF"
+          echo "GITHUB_HEAD_REF=$GITHUB_HEAD_REF"
+          echo "GITHUB_REF=$GITHUB_REF"
+          echo "GITHUB_REF_NAME=$GITHUB_REF_NAME"
+          echo "GITHUB_RUN_ID=$GITHUB_RUN_ID"
