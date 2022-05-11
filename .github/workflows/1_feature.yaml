@@ -2,7 +2,7 @@ name: "Feature - push to branch"
 on:
   push:
     branches-ignore:
-      - master
+      - main
 
 
 jobs:

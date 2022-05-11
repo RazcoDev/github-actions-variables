@@ -2,7 +2,7 @@ name: "Merged - PR Merged to Master"
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   test-job:
